@@ -50,7 +50,7 @@ class LoginPage extends StatelessWidget {
               child: Card(
                 child: ListTile(
                   leading: Icon(Icons.domain),
-                  trailing: Text("Striver",
+                  trailing: Text("Dank Memes",
                       style: TextStyle(fontSize: 20, fontFamily: "Merienda")),
                 ),
               ),
