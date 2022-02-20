@@ -10,27 +10,29 @@ class QuestionForm {
 
 class QuestionBank {
   int questionNo = 0;
-  List<QuestionForm> questions = [
+
+  List<QuestionForm> _questions = [
     QuestionForm(q: '2+2=4', a: true),
     QuestionForm(q: '2+3=6', a: false),
     QuestionForm(q: '2+8=10', a: true),
   ];
+
   void nextQuestion() {
-    if (questionNo < questions.length - 1) {
+    if (questionNo < _questions.length - 1) {
       questionNo++;
     }
   }
 
   String getQuestion() {
-    return questions[questionNo].questiontext;
+    return _questions[questionNo].questiontext;
   }
 
   bool getAnswer() {
-    return questions[questionNo].answertext;
+    return _questions[questionNo].answertext;
   }
 
   bool isFinished() {
-    if (questionNo == questions.length - 1) {
+    if (questionNo == _questions.length - 1) {
       return true;
     } else {
       return false;
