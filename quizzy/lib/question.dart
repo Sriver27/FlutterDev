@@ -9,7 +9,7 @@ class QuestionForm {
 }
 
 class QuestionBank {
-  int questionNo = 0;
+  int _questionNo = 0;
 
   List<QuestionForm> _questions = [
     QuestionForm(q: '2+2=4', a: true),
@@ -18,21 +18,21 @@ class QuestionBank {
   ];
 
   void nextQuestion() {
-    if (questionNo < _questions.length - 1) {
-      questionNo++;
+    if (_questionNo < _questions.length - 1) {
+      _questionNo++;
     }
   }
 
   String getQuestion() {
-    return _questions[questionNo].questiontext;
+    return _questions[_questionNo].questiontext;
   }
 
   bool getAnswer() {
-    return _questions[questionNo].answertext;
+    return _questions[_questionNo].answertext;
   }
 
   bool isFinished() {
-    if (questionNo == _questions.length - 1) {
+    if (_questionNo == _questions.length - 1) {
       return true;
     } else {
       return false;
