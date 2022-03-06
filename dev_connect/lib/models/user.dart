@@ -2,14 +2,14 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 class User {
   final String username;
-  final String uid;
+  var uid;
   final String email;
   final String collegeName;
   final List followers;
   final List following;
-  final String photoUrl;
+  final String? photoUrl;
 
-  const User(
+  User(
       {required this.username,
       required this.uid,
       required this.email,

@@ -72,13 +72,8 @@ class _mobileLayoutState extends State<mobileLayout> {
               label: '',
               backgroundColor: primaryColor),
           BottomNavigationBarItem(
-              icon: Icon(Icons.filter_list,
-                  color: _page == 3 ? primaryColor : secondaryColor),
-              label: '',
-              backgroundColor: primaryColor),
-          BottomNavigationBarItem(
               icon: Icon(Icons.person,
-                  color: _page == 4 ? primaryColor : secondaryColor),
+                  color: _page == 3 ? primaryColor : secondaryColor),
               label: '',
               backgroundColor: primaryColor),
         ],
