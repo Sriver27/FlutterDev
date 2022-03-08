@@ -2,7 +2,7 @@ import 'package:dev_connect/models/user.dart';
 import 'package:dev_connect/resources/auth_methods.dart';
 import 'package:flutter/material.dart';
 
-class userProvider extends ChangeNotifier {
+class userProvider with ChangeNotifier {
   User? _user;
   final AuthMethods _authMethods = AuthMethods();
   User get getUser => _user!;

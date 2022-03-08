@@ -5,6 +5,7 @@ import 'package:dev_connect/resources/storage_methods.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:dev_connect/models/user.dart' as model;
+import 'package:image_picker/image_picker.dart';
 
 class AuthMethods {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -25,7 +26,7 @@ class AuthMethods {
     required String password,
     required String username,
     required String collegename,
-    required Uint8List file,
+    required XFile? file,
   }) async {
     String res = "Some error occured";
 
@@ -40,8 +41,8 @@ class AuthMethods {
             email: email, password: password);
         //add user to database
         String photoUrl = await storageMethods()
-            .uploadImagetoStorage('profilePics', file, false);
-        print(cred.user!.uid);
+            .uploadImagetoStorage('profilePics', file!, false);
+
         model.User user = model.User(
           username: username,
           uid: cred.user!.uid,
@@ -56,6 +57,8 @@ class AuthMethods {
             .doc(cred.user!.uid)
             .set(user.toJson());
         res = "Success";
+      } else {
+        res = "Please enter all the feilds";
       }
     } catch (e) {
       res = e.toString();
@@ -70,7 +73,8 @@ class AuthMethods {
     String res = "Some error occured";
     try {
       if (email.isNotEmpty || password.isNotEmpty) {
-        _auth.signInWithEmailAndPassword(email: email, password: password);
+        await _auth.signInWithEmailAndPassword(
+            email: email, password: password);
         res = "Success";
       } else {
         res = "Please enter all the feilds";
@@ -79,5 +83,9 @@ class AuthMethods {
       res = err.toString();
     }
     return res;
+  }
+
+  Future<void> signOut() async {
+    await _auth.signOut();
   }
 }
