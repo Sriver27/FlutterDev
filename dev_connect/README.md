@@ -1,16 +1,59 @@
-# dev_connect
+DevStack
 
-A new Flutter project.
+A goto for all the developer needs
 
-## Getting Started
+## Description:
+DevStack as the name goes by is a community/stack of developers . DevStack provides platform for developers to connect with other ethusiastic developers for their development related needs, ex. requiring a backend/frontend developer for your project.Early age startups/growing startups can also reach out developers for their specific requirement.
+It provides a wholesome bunch of requirement needs ie. AI-ML,PROJECT,APP DEV,QUESTION,BACKEND,UI/UX,HELP,FRONTEND,DESIGN,WEB DEV,HACKATHON,PAIR PROGRAMMING
 
-This project is a starting point for a Flutter application.
+## Benifits:
+ * It helps developers to find their required feild developer for a group project
+ * It helps developers to find their hackathon partners
+ * If stuck anywhere,can ask for help 
+ * Can find pair programmers for increasing your productivity
+ * Startups who can't afford paid developers can also seek for their required feild
 
-A few resources to get you started if this is your first Flutter project:
+## Features
+* Email & Password Authentication
+* Share Posts with Requirements and the aligning tag for requirement
+* Display Posts with Requirement
+* Respond & Comment your queries on Posts
+* Chat Section
+* Search Users
+* Follow Users
+* Display User Posts, Followers & Following
+* EVERYTHING REAL TIME
+* Sign Out
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Installation
+After cloning this repository, migrate to dev_connect folder. Then, follow the following steps:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* Create Firebase Project
+* Enable Authentication
+* Make Firestore Rules
+* Create Android Apps
+*  Then run the following commands to run your app:
+
+`  flutter pub get`
+<br>
+ ` open  simulator `
+  
+## Tech Used
+
+#### Server: Firebase Auth, Firebase Storage, Firebase Firestore
+#### Client:Flutter, Provider
+
+## Challenges
+
+* Working out my way with Firebase
+* Layouts
+* Implementing the tags section in add posts screen
+* Working on realtime data fetch/update
+* Followers and following feature
+
+### Future Updates
+* More user friendly chat section
+* Adding a dedicated filter tag so that developers can see only that tag requirements which they want to see and work upon
+* Personalisation
+
+  
