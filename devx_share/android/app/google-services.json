@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "484618418089",
+    "project_id": "devx-share",
+    "storage_bucket": "devx-share.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484618418089:android:eeb60e842a0c98f0ea76b8",
+        "android_client_info": {
+          "package_name": "com.example.devx_share"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484618418089-l4krj071ugso81m50mb2g6ncp30nkovs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.devx_share",
+            "certificate_hash": "c1f496770ac5a1dd91c0d3481e68415444f72962"
+          }
+        },
+        {
+          "client_id": "484618418089-v45l2kthr8cg45hp49gso9u0ivb15d82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3h9cTR745-iRWxNMwuJNnSVzH_igOecg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "484618418089-v45l2kthr8cg45hp49gso9u0ivb15d82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
