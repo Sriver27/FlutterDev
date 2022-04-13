@@ -19,11 +19,11 @@ class LoginScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'ProShare',
+                  'DevxShare',
                   style: GoogleFonts.poppins(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
-                    fontSize: 40,
+                    fontSize: 38,
                   ),
                 ),
                 const SizedBox(
@@ -53,31 +53,36 @@ class LoginScreen extends StatelessWidget {
                       MaterialPageRoute(builder: (_) => const HomeScreen()));
                 }
               },
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20.0,
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15.0)),
+                      child: Image.network(
+                        "https://cdn.icon-icons.com/icons2/2631/PNG/512/google_search_new_logo_icon_159150.png",
+                        height: 30,
+                        width: 30,
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 15,
+                    ),
+                    Text(
+                      'Get Started',
+                      style: GoogleFonts.poppins(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(15.0)),
-                    child: Image.network(
-                      "https://cdn.icon-icons.com/icons2/2631/PNG/512/google_search_new_logo_icon_159150.png",
-                      height: 30,
-                      width: 30,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18,
+                      ),
                     ),
-                  ),
-                  const SizedBox(
-                    width: 15,
-                  ),
-                  Text(
-                    'Get Started',
-                    style: GoogleFonts.poppins(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w600,
-                      fontSize: 18,
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
@@ -89,14 +94,14 @@ class LoginScreen extends StatelessWidget {
           ),
           BuildRotatedWidget(
             image: "devfolio",
-            top: MediaQuery.of(context).size.height - 90,
+            top: MediaQuery.of(context).size.height - 110,
             left: MediaQuery.of(context).size.width - 90,
             tilt: 40,
           ),
           const BuildRotatedWidget(
             image: "leetcode",
-            top: 650,
-            left: 110,
+            top: 550,
+            left: 120,
             tilt: 78,
           ),
           // const BuildRotatedWidget(
@@ -113,7 +118,7 @@ class LoginScreen extends StatelessWidget {
           ),
           BuildRotatedWidget(
             image: "gmail",
-            top: MediaQuery.of(context).size.height - 65,
+            top: MediaQuery.of(context).size.height - 95,
             left: 18,
             tilt: 12,
           ),

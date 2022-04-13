@@ -91,12 +91,12 @@ class _ShowLinksState extends State<ShowLinks> {
                     padding: EdgeInsets.all(2.0),
                     child: CircleAvatar(
                       radius: 20,
-                      foregroundImage: AssetImage("Assets/Images/Linkedin.png"),
+                      foregroundImage: AssetImage("Assets/Images/LinkedIn.png"),
                     ),
                   ),
                 ),
                 title: Text(
-                  linkMap['Linkedin'] == ""
+                  linkMap['Linkedn'] == ""
                       ? "No Link added"
                       : linkMap['Linkedin'],
                   style: GoogleFonts.poppins(
@@ -129,7 +129,7 @@ class _ShowLinksState extends State<ShowLinks> {
                     padding: EdgeInsets.all(2.0),
                     child: CircleAvatar(
                       radius: 20,
-                      foregroundImage: AssetImage("Assets/Images/facebook.png"),
+                      foregroundImage: AssetImage("Assets/Images/fb.png"),
                     ),
                   ),
                 ),
@@ -204,7 +204,7 @@ class _ShowLinksState extends State<ShowLinks> {
                     padding: EdgeInsets.all(2.0),
                     child: CircleAvatar(
                       radius: 20,
-                      foregroundImage: AssetImage("Assets/Images/codechef.png"),
+                      foregroundImage: AssetImage("Assets/Images/codechef.jpg"),
                     ),
                   ),
                 ),
@@ -243,7 +243,7 @@ class _ShowLinksState extends State<ShowLinks> {
                     child: CircleAvatar(
                       radius: 15,
                       backgroundColor: Colors.white,
-                      foregroundImage: AssetImage("Assets/Images/insta.png"),
+                      foregroundImage: AssetImage("Assets/Images/insta.jpg"),
                     ),
                   ),
                 ),
@@ -283,7 +283,7 @@ class _ShowLinksState extends State<ShowLinks> {
                       backgroundColor: Colors.white,
                       radius: 20,
                       foregroundImage:
-                          AssetImage("Assets/Images/codeforces.png"),
+                          AssetImage("Assets/Images/codeforces_logo.png"),
                     ),
                   ),
                 ),
@@ -362,7 +362,7 @@ class _ShowLinksState extends State<ShowLinks> {
                       backgroundColor: Colors.white,
                       radius: 20,
                       foregroundImage:
-                          AssetImage("Assets/Images/hackerrank.png"),
+                          AssetImage("Assets/Images/hackerrank.jpg"),
                     ),
                   ),
                 ),
@@ -401,7 +401,7 @@ class _ShowLinksState extends State<ShowLinks> {
                     child: CircleAvatar(
                       backgroundColor: Colors.white,
                       radius: 20,
-                      foregroundImage: AssetImage("Assets/Images/twitter.png"),
+                      foregroundImage: AssetImage("Assets/Images/twitter.jpg"),
                     ),
                   ),
                 ),
@@ -634,7 +634,7 @@ class _ShowLinksState extends State<ShowLinks> {
                     child: CircleAvatar(
                       backgroundColor: Colors.white,
                       radius: 20,
-                      foregroundImage: AssetImage("Assets/Images/GFG.png"),
+                      foregroundImage: AssetImage("Assets/Images/gfg.png"),
                     ),
                   ),
                 ),
@@ -710,7 +710,7 @@ class _ShowLinksState extends State<ShowLinks> {
                     child: CircleAvatar(
                       backgroundColor: Colors.white,
                       radius: 20,
-                      foregroundImage: AssetImage("Assets/Images/spoj.png"),
+                      foregroundImage: AssetImage("Assets/Images/spoj.jpg"),
                     ),
                   ),
                 ),
@@ -748,7 +748,7 @@ class _ShowLinksState extends State<ShowLinks> {
                       backgroundColor: Colors.white,
                       radius: 20,
                       foregroundImage:
-                          AssetImage("Assets/Images/interviewbit.png"),
+                          AssetImage("Assets/Images/interviewbit.jpg"),
                     ),
                   ),
                 ),

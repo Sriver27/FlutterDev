@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.black,
         automaticallyImplyLeading: false,
         title: Text(
-          'ProShare',
+          'DevxShare',
           style: GoogleFonts.poppins(
             fontWeight: FontWeight.bold,
           ),
@@ -218,19 +218,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   // ignore: prefer_const_literals_to_create_immutables
                   children: [
                     const IconContainer(
-                      string: "Assets/Images/tumb.png",
-                      socialMediaName: 'Tumbler',
+                      string: "Assets/Images/atcoder.png",
+                      socialMediaName: 'AtCoder',
                     ),
                     const IconContainer(
-                      string: "Assets/Images/reddit.png",
-                      socialMediaName: 'Reddit',
+                      string: "Assets/Images/codechef.jpg",
+                      socialMediaName: 'CodeChef',
                     ),
                     const IconContainer(
-                      string: "Assets/Images/facebook.png",
+                      string: "Assets/Images/fb.jpg",
                       socialMediaName: 'Facebook',
                     ),
                     const IconContainer(
-                      string: "Assets/Images/twitter.png",
+                      string: "Assets/Images/twitter.jpg",
                       socialMediaName: 'Twitter',
                     ),
                     const IconContainer(
@@ -238,20 +238,60 @@ class _HomeScreenState extends State<HomeScreen> {
                       socialMediaName: 'Github',
                     ),
                     const IconContainer(
-                      string: "Assets/Images/insta.png",
+                      string: "Assets/Images/insta.jpg",
                       socialMediaName: 'Instagram',
                     ),
                     const IconContainer(
-                      string: "Assets/Images/messenger.png",
-                      socialMediaName: 'Messenger',
+                      string: "Assets/Images/codeforces_logo.png",
+                      socialMediaName: 'CodeForces',
                     ),
                     const IconContainer(
-                      string: "Assets/Images/snapchat.png",
-                      socialMediaName: 'Snapchat',
+                      string: "Assets/Images/devfolio.png",
+                      socialMediaName: 'DevFolio',
                     ),
                     const IconContainer(
-                      string: "Assets/Images/Linkedin.png",
+                      string: "Assets/Images/LinkedIn.png",
                       socialMediaName: 'Linkedin',
+                    ),
+                    const IconContainer(
+                      string: "Assets/Images/g+.png",
+                      socialMediaName: 'Google+',
+                    ),
+                    const IconContainer(
+                      string: "Assets/Images/gfg.png",
+                      socialMediaName: 'Geeks For Geeks',
+                    ),
+                    const IconContainer(
+                      string: "Assets/Images/gmail.png",
+                      socialMediaName: 'Gmail',
+                    ),
+                    const IconContainer(
+                      string: "Assets/Images/hackerearth.png",
+                      socialMediaName: 'HackerEarth',
+                    ),
+                    const IconContainer(
+                      string: "Assets/Images/hackerrank.jpg",
+                      socialMediaName: 'HackerRank',
+                    ),
+                    const IconContainer(
+                      string: "Assets/Images/interviewbit.jpg",
+                      socialMediaName: 'InterviewBit',
+                    ),
+                    const IconContainer(
+                      string: "Assets/Images/leetcode.png",
+                      socialMediaName: 'Leetcode',
+                    ),
+                    const IconContainer(
+                      string: "Assets/Images/spoj.jpg",
+                      socialMediaName: 'Spoj',
+                    ),
+                    const IconContainer(
+                      string: "Assets/Images/topcoder.png",
+                      socialMediaName: 'TopCoder',
+                    ),
+                    const IconContainer(
+                      string: "Assets/Images/yt.png",
+                      socialMediaName: 'YouTube',
                     ),
                   ],
                 ),
