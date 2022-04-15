@@ -5,10 +5,8 @@ import 'package:devx_share/Screens/show_link.dart';
 import 'package:provider/provider.dart';
 
 class DynamicLinkAPI {
-  FirebaseDynamicLinks dynamicLinks = FirebaseDynamicLinks.instance;
-
   void initDynamicLinks(context) async {
-    FirebaseDynamicLinks.instance.onLink;
+    // FirebaseDynamicLinks.instance.onLink;
 
     final PendingDynamicLinkData? data =
         await FirebaseDynamicLinks.instance.getInitialLink();
@@ -16,6 +14,7 @@ class DynamicLinkAPI {
 
     if (deepLink != null) {
       print(deepLink.queryParameters.toString());
+      print(deepLink.queryParameters['u']);
       Navigator.push(
         context,
         MaterialPageRoute(
@@ -27,17 +26,16 @@ class DynamicLinkAPI {
 
   Future createDynamicLink(context) async {
     final DynamicLinkParameters parameters = DynamicLinkParameters(
-      uriPrefix: 'https://proshare.page.link',
+      uriPrefix: 'https://devxshare.page.link',
       link: Uri.parse(
-          'https://www.proshare.in/?u=${Provider.of<UserData>(context, listen: false).uID}'),
+          'https://www.devxshare.in/?u=${Provider.of<UserData>(context, listen: false).uID}'),
       androidParameters: AndroidParameters(
-        packageName: 'com.example.pro_share',
+        packageName: 'com.example.devx_share',
         minimumVersion: 0,
       ),
       // dynamicLinkParametersOptions: DynamicLinkParametersOptions(
       //   shortDynamicLinkPathLength: ShortDynamicLinkPathLength.short,
       // ),
-
       socialMetaTagParameters: SocialMetaTagParameters(
         description: "Hey! Please checkout my profile",
         title: "Connect With Me",
@@ -46,12 +44,10 @@ class DynamicLinkAPI {
       ),
     );
 
-    Uri url;
-    final ShortDynamicLink shortLink =
-        await dynamicLinks.buildShortLink(parameters);
-    ;
-    url = shortLink.shortUrl;
-    print(url);
-    return url;
+    // Uri url;
+    // final ShortDynamicLink shortLink = await parameters.buildShortLink();
+    // url = shortLink.shortUrl;
+    // print(url);
+    // return url;
   }
 }
